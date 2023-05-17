@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho__titulo {
+    margin-left: 30%;
+}
+
+.cabecalho__link {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.principal {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 3em;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.151);
+}
+
+.formulario__label {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.numero {
+    padding: 0.4em 1em;
+    margin-left: 1em;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.numero::placeholder {
+    font-weight: 600;
+}
+
+.numero::-webkit-inner-spin-button, .numero::-webkit-outer-spin-button {
+    margin: 0;
+    display: none;
+}
+
+.botoes {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.botao__calcular, .botao__limpar {
+    width: 30%;
+    padding: 0.4em;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-top: -7em;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botao__calcular:hover, .botao__limpar:hover {
+    background-color: #222222;
+}
+
+.resultado {
+    margin-top: -12em;
+    display: none;
+}
+
+.resultado__texto {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.cor__destaque {
+    color: #ff0000;
+}
+
+.rodape {
+    height: 47px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho__link {
+        display: none;
+    }
+
+    .cabecalho__titulo {
+        margin-left: 0;
+    }
+
+    .container {
+        border: none;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario__label {
+        font-size: 14px;
+    }
+
+    .resultado {
+        margin-top: -21em;
+    }
+
+    .botoes {
+        margin-top: -17em;
+    }
+
+    .botao__calcular, .botao__limpar {
+        width: 50%;
+    }
+}
